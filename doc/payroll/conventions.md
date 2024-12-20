@@ -89,7 +89,7 @@ All new fields for model existing in standard should start with `l10n_[country]_
 Also the `string` of those fields should always be `"[country]: [name]"`.
 Then in the views, the string should be overriden to `"[name]"`.
 
-This is to avoid the runbot unhappy about fields with same labels (could happen from different localisations installed at the same time).
+This is to avoid the runbot unhappy about fields with same labels (could happen if different localisations are installed at the same time).
 
 ## Models
 New models for loca should start with `l10n.[country].` and the file should start with `l10n_[country]_`.
