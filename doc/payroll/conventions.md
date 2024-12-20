@@ -2,53 +2,53 @@
 
 ## Glossary
 - name : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
-- l10n : 2 character localization (e.g. be)
+- country : 2 character localization (e.g. be)
 - employee_type : employee type (e.g. employee, worker, student)
 - struct_xml_id : xml id of the Salary Structure
 
 ## Record Ids
 ### Salary Structure
 
-The default one should be called `l10n_[l10n]_regular_pay`.
+The default one should be called `l10n_[country]_regular_pay`.
 
-Then all others should look like `l10n_[l10n]_[name]`.
+Then all others should look like `l10n_[country]_[name]`.
 
 e.g. l10n_ke_regular_pay, l10n_lu_13th_month
 
 n.b.
 if you have multiple subcategories the convention become:
-- The default one should be called `l10n_[l10n]_[categories]_regular_pay`.
-- Then all others should look like `l10n_[l10n]_[categories]_[name]`.
+- The default one should be called `l10n_[country]_[categories]_regular_pay`.
+- Then all others should look like `l10n_[country]_[categories]_[name]`.
 
 e.g. l10n_be_cp200_regular_pay, l10n_be_cp200_13th_month
 
 ### Structure Type
 
-The default one should be called `l10n_[l10n]_[employee_type]`.
+The default one should be called `l10n_[country]_[employee_type]`.
 
-Then all others should look like `l10n_[l10n]_[employee_type]_[name]`.
+Then all others should look like `l10n_[country]_[employee_type]_[name]`.
 
 e.g. l10n_ke_student, l10n_ke_employee
 
 n.b.
 if you have multiple subcategories the convention become:
-- The default one should be called `l10n_[l10n]_[categories]_[employee_type]`.
-- Then all others should look like `l10n_[l10n]_[categories]_[employee_type]_[name]`.
+- The default one should be called `l10n_[country]_[categories]_[employee_type]`.
+- Then all others should look like `l10n_[country]_[categories]_[employee_type]_[name]`.
 
 e.g. l10n_be_cp200_employee, l10n_be_cp200_pfi_employee
 
 ### Input Types
-The inputs should look like `l10n_[l10n]_input_[name]`.
+The inputs should look like `l10n_[country]_input_[name]`.
 
 e.g. l10n_ke_input_nhif
 
 ### Categories
-The categories should look like `l10n_[l10n]_category_[name]`.
+The categories should look like `l10n_[country]_category_[name]`.
 
 e.g. l10n_ke_category_basic
 
 ### Rule Parameters
-The rule parameters should look like `l10n_[l10n]_rule_parameter_[name]`.
+The rule parameters should look like `l10n_[country]_rule_parameter_[name]`.
 
 e.g. l10n_be_rule_parameter_onss
 
@@ -63,12 +63,12 @@ n.b.
 - else maybe you should rethink the code and/or the name
 
 ### Work Entry Types
-The work entry types should look like `l10n_[l10n]_work_entry_type_[name]`.
+The work entry types should look like `l10n_[country]_work_entry_type_[name]`.
 
 e.g. l10n_be_work_entry_type_attendance
 
 ### Leave Types
-The leave types should look like `l10n_[l10n]_leave_type_[name]`.
+The leave types should look like `l10n_[country]_leave_type_[name]`.
 
 l10n_be_leave_type_sick_leave
 
@@ -80,14 +80,14 @@ n.b.
 
 ## Record Existing Fields
 ### General
-No referance to the current model should be written e.g. if you are in l10n_be_hr_payroll no record should be referenced like l10n_be_hr_payroll.l10n_be_input_basic but just be referenced as l10n_be_input_basic
+No referance to the current model should be written e.g. if you are in `l10n_be_hr_payroll` no record should be referenced like `l10n_be_hr_payroll.l10n_be_input_basic` but just be referenced as `l10n_be_input_basic`.
 
 ### Salary Structure
-A salary structure should have its field rule_ids set to `[]`. Don't use the default one or you wont be able to translate them.
+A salary structure should have its field `rule_ids` set to `[]`. Don't use the default one or you wont be able to translate them.
 
 ## Fields
-All new fields for model existing in standard should start with `l10n_[l10n]_`.
+All new fields for model existing in standard should start with `l10n_[country]_`.
 
 ## Models
-New models for loca should start with `l10n.[l10n].` and the file should start with `l10n_[l10n]_`.
-Fields inside those models don't need to start with `l10n_[l10n]_`.
+New models for loca should start with `l10n.[country].` and the file should start with `l10n_[country]_`.
+Fields inside those models don't need to start with `l10n_[country]_`.
