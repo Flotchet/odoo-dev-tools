@@ -9,9 +9,8 @@
 ## Record Ids
 ### Salary Structure
 
-The default one should be called `l10n_[country]_regular_pay`.
-
-Then all others should look like `l10n_[country]_[name]`.
+- The default one should be called `l10n_[country]_regular_pay`.
+- Then all others should look like `l10n_[country]_[name]`.
 
 e.g. l10n_ke_regular_pay, l10n_lu_13th_month
 
@@ -24,9 +23,8 @@ e.g. l10n_be_cp200_regular_pay, l10n_be_cp200_13th_month
 
 ### Structure Type
 
-The default one should be called `l10n_[country]_[employee_type]`.
-
-Then all others should look like `l10n_[country]_[employee_type]_[name]`.
+- The default one should be called `l10n_[country]_[employee_type]`.
+- Then all others should look like `l10n_[country]_[employee_type]_[name]`.
 
 e.g. l10n_ke_student, l10n_ke_employee
 
