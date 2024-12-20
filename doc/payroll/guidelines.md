@@ -1,4 +1,4 @@
-# Conventions
+# Guidelines
 
 ## Glossary
 - `name` : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
@@ -61,11 +61,15 @@ _Example:_ `l10n_be_cp200_regular_pay_basic`
 - else maybe you should rethink the code and/or the name
 
 ### Work Entry Types
+**All work entries should be defined in the `hr_work_entry` module to allow them to be used without payroll installed.**
+
 The work entry types should look like `l10n_[country]_work_entry_type_[name]`.
 
 _Example:_ `l10n_be_work_entry_type_attendance`
 
 ### Leave Types
+**All leave types should be defined in the `hr_holidays` module to allow them to be used without payroll installed.**
+
 The leave types should look like `l10n_[country]_leave_type_[name]`.
 
 _Example:_ `l10n_be_leave_type_sick_leave`
