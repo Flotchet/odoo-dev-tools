@@ -74,7 +74,7 @@ n.b.
 - else maybe you should rething the code and/or the name
 
 
-## Record fields
+##  Record fields
 
 ### general
 No referance to the current model should be written e.g. if you are in l10n_be_hr_payroll no record should be referenced like l10n_be_hr_payroll.l10n_be_input_basic but just be referenced as l10n_be_input_basic
