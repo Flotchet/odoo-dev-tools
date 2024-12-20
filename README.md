@@ -4,5 +4,5 @@ This repo is made to put together different scripts used to make the developper 
 
 ## Payroll
 
-[Conventions](doc/payroll/conventions.md)
+[Guidelines](doc/payroll/guidelines.md)
 
