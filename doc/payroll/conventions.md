@@ -1,6 +1,6 @@
 # Conventions
 
-## Parameters
+## Parameters
 name : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
 l10n : 2 character localization (e.g. BE)
 employee_type : employee type (e.g. employee, worker, student)
