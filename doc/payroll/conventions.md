@@ -51,6 +51,8 @@ _Example:_ `l10n_be_rule_parameter_onss`
 ### Salary Rules
 The salary rules should look like `[struct_xml_id]_[name]`
 
+All salary rules should also be ordered by their sequence number in the file.
+
 _Example:_ `l10n_be_cp200_regular_pay_basic`
 
 **Important:**
@@ -83,6 +85,11 @@ A salary structure should have its field `rule_ids` set to `[]`. Don't use the d
 
 ## Fields
 All new fields for model existing in standard should start with `l10n_[country]_`.
+
+Also the `string` of those fields should always be `[country]: [name]`.
+Then in the views, the string should be overriden to `[name]`.
+
+This is to avoid the runbot unhappy about fields with same labels (could happen from different localisations installed at the same time).
 
 ## Models
 New models for loca should start with `l10n.[country].` and the file should start with `l10n_[country]_`.
