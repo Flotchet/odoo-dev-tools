@@ -13,7 +13,7 @@ The default one should be called `l10n_[l10n]_regular_pay`.
 
 Then all others should look like `l10n_[l10n]_[name]`.
 
-e.g. l10n_ke_regular_pay, l10n_lu_13th_month_pay
+e.g. l10n_ke_regular_pay, l10n_lu_13th_month
 
 n.b.
 if you have multiple subcategories the convention become:
