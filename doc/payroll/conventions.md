@@ -23,15 +23,17 @@ if you have multiple subcategories the convention become:
 e.g. l10n_be_cp200_regular_pay, l10n_be_cp200_13th_month_pay
 
 ### Structure Type
+
 The default one should be called `l10n_[l10n]_[employee_type]`.
+
 Then all others should look like `l10n_[l10n]_[employee_type]_[name]`.
 
 e.g. l10n_ke_student, l10n_ke_employee_13th
 
 n.b.
 if you have multiple subcategories the convention become:
--The default one should be called `l10n_[l10n]_[categories]_[employee_type]`.
--Then all others should look like `l10n_[l10n]_[categories]_[employee_type]_[name]`.
+- The default one should be called `l10n_[l10n]_[categories]_[employee_type]`.
+- Then all others should look like `l10n_[l10n]_[categories]_[employee_type]_[name]`.
 
 e.g. l10n_be_cp200_student, l10n_be_cp200_employee_13th
 
