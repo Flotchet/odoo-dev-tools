@@ -12,50 +12,50 @@
 - The default one should be called `l10n_[country]_regular_pay`.
 - Then all others should look like `l10n_[country]_[name]`.
 
-e.g. l10n_ke_regular_pay, l10n_lu_13th_month
+_e.g._ `l10n_ke_regular_pay`, `l10n_lu_13th_month`
 
-n.b.
+_n.b._
 if you have multiple subcategories the convention become:
 - The default one should be called `l10n_[country]_[categories]_regular_pay`.
 - Then all others should look like `l10n_[country]_[categories]_[name]`.
 
-e.g. l10n_be_cp200_regular_pay, l10n_be_cp200_13th_month
+_e.g._ `l10n_be_cp200_regular_pay`, `l10n_be_cp200_13th_month`
 
 ### Structure Type
 
 - The default one should be called `l10n_[country]_[employee_type]`.
 - Then all others should look like `l10n_[country]_[employee_type]_[name]`.
 
-e.g. l10n_ke_student, l10n_ke_employee
+_e.g._ `l10n_ke_student`, `l10n_ke_employee`
 
-n.b.
+_n.b._
 if you have multiple subcategories the convention become:
 - The default one should be called `l10n_[country]_[categories]_[employee_type]`.
 - Then all others should look like `l10n_[country]_[categories]_[employee_type]_[name]`.
 
-e.g. l10n_be_cp200_employee, l10n_be_cp200_pfi_employee
+_e.g._ `l10n_be_cp200_employee`, `l10n_be_cp200_pfi_employee`
 
 ### Input Types
 The inputs should look like `l10n_[country]_input_[name]`.
 
-e.g. l10n_ke_input_nhif
+_e.g._ `l10n_ke_input_nhif`
 
 ### Categories
 The categories should look like `l10n_[country]_category_[name]`.
 
-e.g. l10n_ke_category_basic
+_e.g._ `l10n_ke_category_basic`
 
 ### Rule Parameters
 The rule parameters should look like `l10n_[country]_rule_parameter_[name]`.
 
-e.g. l10n_be_rule_parameter_onss
+_e.g._ `l10n_be_rule_parameter_onss`
 
 ### Salary Rules
 The salary rules should look like `[struct_xml_id]_[name]`
 
-e.g. l10n_be_cp200_regular_pay_basic
+_e.g._ `l10n_be_cp200_regular_pay_basic`
 
-n.b.
+_n.b._
 - if the code is sufficiently explicit it's the preferred way to set `[name]` (lower(code))
 - elif the name is sufficiently explicit it's the preferred way to set `[name]` (alphanumeric(name).replace(" ", "_"))
 - else maybe you should rethink the code and/or the name
@@ -63,17 +63,17 @@ n.b.
 ### Work Entry Types
 The work entry types should look like `l10n_[country]_work_entry_type_[name]`.
 
-e.g. l10n_be_work_entry_type_attendance
+_e.g._ `l10n_be_work_entry_type_attendance`
 
 ### Leave Types
 The leave types should look like `l10n_[country]_leave_type_[name]`.
 
-l10n_be_leave_type_sick_leave
+_e.g._ `l10n_be_leave_type_sick_leave`
 
-n.b.
+_n.b._
 - if the code is sufficiently explicit it's the preferred way to set `[name]` (lower(code))
 - elif the name is sufficiently explicit it's the preferred way to set `[name]` (alphanumeric(name).replace(" ", "_"))
-- else maybe you should rething the code and/or the name
+- else maybe you should rethink the code and/or the name
 
 
 ## Record Existing Fields
