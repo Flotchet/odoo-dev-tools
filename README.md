@@ -2,7 +2,8 @@
 
 This repo is made to put together different scripts used to make the developper life at odoo easier
 
-## Naming Conventions
+# Naming Conventions
+## Record Ids
 ### Structure
 The default one should be called `l10n_xx_regular_pay`.
 Then all others should look like `l10n_xx_yyyyyyyy`.
@@ -29,6 +30,12 @@ The work entry types should look like `l10n_xx_work_entry_type_yyyyyyyy`.
 ### Leave Types
 The leave types should look like `l10n_xx_leave_type_yyyyyyyy`.
 
+## Fields
+All new fields for model existing in standard should start with `l10n_xx_`.
+
+## Models
+New models for loca should start with `l10n.xx.` and the file should start with `l10n_xx_`.
+Fields inside those models don't need to start with `l10n_xx_`.
 
 ## hr_salary_rules_xml_checker
 
