@@ -1,10 +1,10 @@
 # Conventions
 
 ## Glossary
-- name : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
-- country : 2 character localization (e.g. be)
-- employee_type : employee type (e.g. employee, worker, student)
-- struct_xml_id : xml id of the Salary Structure
+- `name` : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
+- `country` : 2 character localization (e.g. be)
+- `employee_type` : employee type (e.g. employee, worker, student)
+- `struct_xml_id` : xml id of the Salary Structure
 
 ## Record Ids
 ### Salary Structure
