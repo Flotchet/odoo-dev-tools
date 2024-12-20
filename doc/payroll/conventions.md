@@ -53,7 +53,7 @@ The salary rules should look like `[struct_xml_id]_[name]`
 
 _Example:_ `l10n_be_cp200_regular_pay_basic`
 
-*Important:*
+**Important:**
 - if the code is sufficiently explicit it's the preferred way to set `[name]` (lower(code))
 - elif the name is sufficiently explicit it's the preferred way to set `[name]` (alphanumeric(name).replace(" ", "_"))
 - else maybe you should rethink the code and/or the name
@@ -68,7 +68,7 @@ The leave types should look like `l10n_[country]_leave_type_[name]`.
 
 _Example:_ `l10n_be_leave_type_sick_leave`
 
-*Important:*
+**Important:**
 - if the code is sufficiently explicit it's the preferred way to set `[name]` (lower(code))
 - elif the name is sufficiently explicit it's the preferred way to set `[name]` (alphanumeric(name).replace(" ", "_"))
 - else maybe you should rethink the code and/or the name
