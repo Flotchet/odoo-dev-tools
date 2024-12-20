@@ -190,11 +190,11 @@ def check_data_tags(root: node_type, remove_data: str_or_none = None):
 
 
 def helper():
-    print(f'{colors.WARNING}Usage:{colors.ENDC} python3 change.py {colors.OKBLUE}<path:file.xml>{colors.ENDC}')
-    print(f'{colors.WARNING}Usage:{colors.ENDC} python3 change.py {colors.OKBLUE}<path:file.xml>{colors.ENDC} {colors.OKCYAN}[y/n]{colors.ENDC} {colors.OKGREEN}[y/i/n]{colors.ENDC}')
+    print(f'{colors.WARNING}Usage:{colors.ENDC} python3 hr_salary_rules_xml_checker.py {colors.OKBLUE}<path:file.xml>{colors.ENDC}')
+    print(f'{colors.WARNING}Usage:{colors.ENDC} python3 hr_salary_rules_xml_checker.py {colors.OKBLUE}<path:file.xml>{colors.ENDC} {colors.OKCYAN}[y/n]{colors.ENDC} {colors.OKGREEN}[y/i/n]{colors.ENDC}')
     print(f'{colors.OKBLUE}arg1:{colors.ENDC} path to the xml file')
     print(f'{colors.OKBLUE}arg2:{colors.ENDC} remove data tag {colors.WARNING}(y/n){colors.ENDC} (y: yes, n: no)')
-    print(f'{colors.OKBLUE}arg3:{colors.ENDC} fully reformat the xml file {colors.WARNING}(y/i/n){colors.ENDC} (y: yes, i: instert, n: no)')
+    print(f'{colors.OKBLUE}arg3:{colors.ENDC} fully reformat the xml file {colors.WARNING}(y/i/n){colors.ENDC} (y: yes, i: insert, n: no)')
 
 
 def main():
