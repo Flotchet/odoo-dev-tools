@@ -1,14 +1,16 @@
 # Conventions
 
 ## Parameters
-name : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
-l10n : 2 character localization (e.g. BE)
-employee_type : employee type (e.g. employee, worker, student)
-struct_xml_id : xml id of the Salary Structure
+- name : the name should be understandable by any one and follow the same scheme for the whole module. Also they should be coherent between modules as much as possible.
+- l10n : 2 character localization (e.g. BE)
+- employee_type : employee type (e.g. employee, worker, student)
+- struct_xml_id : xml id of the Salary Structure
 
 ## Record Ids
 ### Salary Structure
+
 The default one should be called `l10n_[l10n]_regular_pay`.
+
 Then all others should look like `l10n_[l10n]_[name]`.
 
 e.g. l10n_ke_regular_pay, l10n_lu_13th_month_pay
