@@ -13,7 +13,8 @@ CODE_ID_MAX_LENGTH: int = 32
 STRUCT_ID_MAX_LENGTH: int = 64
 
 code_id_format: Pattern = re_compile(r'^[A-Za-z0-9_.]+$')
-struct_id_format: Pattern = re_compile(r'^l10n_[a-z]{2}_[a-z_.]+$')
+code_id_ext_format: Pattern  = re_compile(r'^[A-Za-z0-9_. ]+$')
+struct_id_format: Pattern = re_compile(r'^l10n_[a-z]{2}_[0-9a-z_.]+$')
 
 
 class FormatError(Exception):
@@ -135,7 +136,7 @@ def write_xml_reformated(file_path: str, tree: ET, is_ordered: bool):
 
 def node_to_conventionalized_hr_salary_rule_xml_id(node: node_type, file_path: str):
     code: str = node_to_hr_salary_rule_code(node, file_path)
-    formated_code: str = code.replace(".", "_")
+    formated_code: str = code.replace(".", "_").replace(" ", "_")
     struct_id: str = node_to_hr_salary_rule_struct_id(node)
     formated_struct_id: str = struct_id.split('.')[-1]
     return f'{formated_struct_id}_{formated_code}'.lower()
@@ -156,8 +157,10 @@ def node_to_hr_salary_rule_code(node: node_type, file_path: str):
     code: str_or_none = node.find(".//field[@name='code']").text
     if not code:
         raise FormatError(f'{colors.FAIL}FAIL:{colors.ENDC} code: {code} is missing')
-    if not code_id_format.match(code) and 'l10n_' in file_path:
-        raise FormatError(f'{colors.FAIL}FAIL:{colors.ENDC} code: {code} does not respect the format {code_id_format.pattern}')
+    if not code_id_ext_format.match(code) and 'l10n_' in file_path:
+        raise FormatError(f'{colors.FAIL}FAIL:{colors.ENDC} code: {code} does not respect the format {code_id_ext_format.pattern}')
+    if not code_id_format.match(code) and 'l10n_' not in file_path:
+        print(f'{colors.WARNING}WARNING:{colors.ENDC} code: {code} does not respect the format {code_id_format.pattern} it contains spaces!')
     if len(code) > CODE_ID_MAX_LENGTH:
         print(f'{colors.WARNING}WARNING:{colors.ENDC} code: {code} is too long')
     return code

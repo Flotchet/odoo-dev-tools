@@ -60,6 +60,8 @@ _Example:_ `l10n_be_cp200_regular_pay_basic`
 - elif the name is sufficiently explicit it's the preferred way to set `[name]` (alphanumeric(name).replace(" ", "_"))
 - else maybe you should rethink the code and/or the name
 
+n.b. the code should be consider as an user friendly id for the rule so it should preferrably not contain space and be understandable by some kind of logic
+
 ### Work Entry Types
 **All work entries should be defined in the `hr_work_entry` module to allow them to be used without payroll installed.**
 
